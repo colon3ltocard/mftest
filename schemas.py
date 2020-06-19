@@ -2,7 +2,7 @@
 Pydantic schemas/model to validate/parse request and replies
 """
 import re
-from pydantic import BaseModel, validator, ValidationError
+from pydantic import BaseModel, validator
 
 VALID_YEAR_REGEX = re.compile("^(19|20)\d{2}$")  # i hate regex
 MTYPES = ("", "movie", "series", "episode")
