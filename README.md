@@ -1,6 +1,6 @@
 # Intro
 
-Quick and dirty test for MF.
+FastAPI programming test.
 
 # TODO
 
@@ -25,5 +25,15 @@ riés
 
 montrer une invocation du WS ainsi développé avec "curl"
 
-# Install
+# Install and run
+
+```shell script
+pyenv virtualenv 3.8.3 mftestenv
+pyenv activate mftestenv
+pip install -r mftest/requirements.txt
+uvicorn mftest.main:app --reload
+```
+
+Navigate to http://127.0.0.1:8000/docs
+
 
